@@ -8,7 +8,7 @@ import burp.api.montoya.MontoyaApi;
 public class Main implements BurpExtension {
     @Override
     public void initialize(MontoyaApi api) {
-        api.extension().setName("HTTP Reverse Forwarder");
+        api.extension().setName("AutoRepeater");
         
         //Register the HTTP handler with Burp.
         api.http().registerHttpHandler(new MyHttpHandler(api));
